@@ -1,0 +1,257 @@
+
+
+.journal__main-content {
+    display: flex;
+}
+
+.journal__sidebar {
+    background-color: $dark-grey;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 450px;
+}
+
+.journal__sidebar-navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.journal__sidebar-navbar h3 {
+    font-weight: lighter;
+}
+
+.journal__new-entry {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+
+    transition: color .3s ease;
+
+    &:hover {
+        color: darken($color: white, $amount: 20);
+    }
+    
+}
+
+.journal__entries {
+    flex: 1 1 auto;
+    margin-top: 30px;
+    overflow-y: scroll;
+}
+
+.journal__entry {
+    background-color: white;
+    border-radius: 4px;
+    color: $dark-grey;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.journal__entry-picture {
+    height: 75px;
+    width: 75px;
+}
+
+
+.journal__entry-body {
+    padding: 10px;
+}
+
+.journal__entry-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.journal__entry-content {
+    font-size: 10px;
+}
+
+.journal__entry-date-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+.journal__entry-date-box span{
+    font-size: 12px;
+}
+
+.containerDetails{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.my-card {
+    min-width: 260px;
+    max-width: 300px;
+    max-height: 70vh;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+ 
+.my-card img {
+    transition: all 0.15s linear;
+    position: relative;
+    top: -15%;
+    left: -25%;
+    filter: brightness(70%);
+}
+ 
+.my-card .profile-name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFF;
+    padding: 15px 20px;
+    transition: all 0.15s linear;
+}
+ 
+.my-card .profile-position {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.596);
+    left: 30px;
+    top: 60px;
+    transition: all 0.15s linear;
+}
+ 
+.my-card .profile-overview {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 50%, rgba(255, 255, 0, 0));
+    color: #FFF;
+    padding: 50px 0px 40px 0px;
+    transition: all 0.15s linear;
+}
+ 
+.my-card .profile-overview h3 {
+    font-weight: bold;
+    font-size: large;
+    padding-left: 25px;
+}
+ 
+.my-card .profile-overview p {
+    color: rgba(255, 255, 255, 0.7);
+    padding-left: 25px;
+    padding-right: 25px;
+}
+ 
+.my-card:hover .profile-name {
+    padding-left: 25px;
+}
+ 
+.my-card:hover .profile-position {
+    left: 40px;
+}
+ 
+.my-card:hover .profile-overview {
+    padding-bottom: 25px;
+}
+ 
+.my-card img:hover {
+    transform: scale(1.01);
+}
+
+.my-card2 {
+    min-width: 260px;
+    max-width: 600px;
+    max-height: 100vh;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+ 
+.my-card2 img {
+    transition: all 0.15s linear;
+    position: relative;
+    top: -15%;
+    left: -25%;
+    filter: brightness(70%);
+}
+ 
+.my-card2 .profile-name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFF;
+    padding: 15px 20px;
+    transition: all 0.15s linear;
+}
+ 
+.my-card2 .profile-position {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.596);
+    left: 30px;
+    top: 60px;
+    transition: all 0.15s linear;
+}
+ 
+.my-card2 .profile-overview {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 50%, rgba(255, 255, 0, 0));
+    color: #FFF;
+    padding: 50px 0px 40px 0px;
+    transition: all 0.15s linear;
+}
+ 
+.my-card2 .profile-overview h3 {
+    font-weight: bold;
+    font-size: large;
+    padding-left: 25px;
+}
+ 
+.my-card2 .profile-overview p {
+    color: rgba(255, 255, 255, 0.7);
+    padding-left: 25px;
+    padding-right: 25px;
+}
+ 
+.my-card2:hover .profile-name {
+    padding-left: 25px;
+}
+ 
+.my-card2:hover .profile-position {
+    left: 40px;
+}
+ 
+.my-card2:hover .profile-overview {
+    padding-bottom: 25px;
+}
+ 
+.my-card2 img:hover {
+    transform: scale(1.01);
+}
